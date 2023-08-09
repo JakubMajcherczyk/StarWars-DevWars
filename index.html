@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Dev Wars HomeWork</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="buttons"></div>
+      <div class="tableWrapper">
+        <!-- Pagination -->
+        <div id="pagination">
+          <button id="prevPage">Previous</button>
+          <!-- prettier-ignore -->
+          <span>Page: <span id="currentPage"></span> of <span id="toPage"></span></span>
+          <button id="nextPage">Next</button>
+          Go to page: <input type="number" id="gotoPage" min="1" />
+          <button id="goToPageButton">GO</button>
+        </div>
+        <table id="tableContainer"></table>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <!-- Zawartość modalu -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+      </div>
+    </div>
+
+    <!-- Delete modal -->
+    <div id="deleteModal" class="modal">
+      <div class="modal-content">
+        <p>Are you sure?</p>
+        <button id="confirmDeleteYes">YES</button>
+        <button id="confirmDeleteNo">NO</button>
+      </div>
+    </div>
+  </body>
+</html>
